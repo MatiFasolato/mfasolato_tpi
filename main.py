@@ -35,7 +35,7 @@ def ordenar_datos_burbuja(datos: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
 # --- 3. CAPA DE LÓGICA (Business Logic) ---
 def calcular_subtotal(cantidad: float, precio: float) -> float:
     """Función aritmética simple (Ideal para Test Unitario)."""
-    return cantidad * precio
+    return cantidad + precio
 
 def procesar_ventas(datos: List[Dict[str, Any]]) -> Dict[str, Any]:
     """
