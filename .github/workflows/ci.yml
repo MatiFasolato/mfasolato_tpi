@@ -1,0 +1,32 @@
+name: Pipeline de CI Supermercado
+
+# Se ejecutará cada vez que hagamos un Pull Request hacia la rama main
+on:
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  pruebas-automaticas:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Descarga tu código
+      - name: Obtener el código
+        uses: actions/checkout@v4
+
+      # 2. Instala Python
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      # 3. Instala las dependencias (pandas y pytest)
+      - name: Instalar dependencias
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # 4. Ejecuta tus pruebas
+      - name: Ejecutar Unit Tests
+        run: |
+          pytest test_main.py
