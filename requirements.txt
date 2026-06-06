@@ -1,2 +1,3 @@
 pandas
 pytest
+libreria-inexistente-para-fallar-tests
