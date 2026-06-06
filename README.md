@@ -1,5 +1,9 @@
 # Trabajo Práctico Integrador - Procesamiento de Ventas de Supermercado
 
+**Alumno:** Matías Fasolato
+
+---
+
 Este proyecto implementa una solución modularizada en Python para el procesamiento y
 consolidación de datos de ventas de un supermercado mediante la técnica de **Corte de
 Control**. Está diseñado bajo buenas prácticas de arquitectura de software, incluyendo
@@ -40,22 +44,26 @@ El código está dividido en capas con responsabilidades independientes
 ## Instalación y Ejecución
 
 **1. Clonar el repositorio**
+
 ```bash
 git clone https://github.com/MatiFasolato/mfasolato_tpi.git
 cd mfasolato_tpi
 ```
 
 **2. Instalar dependencias**
+
 ```bash
 pip install -r requirements.txt
 ```
 
 **3. Ejecutar el programa**
+
 ```bash
 python main.py
 ```
 
 **4. Ejecutar los tests**
+
 ```bash
 pytest test_main.py
 ```
@@ -66,13 +74,13 @@ pytest test_main.py
 
 El proyecto cuenta con 5 pruebas unitarias desarrolladas con `pytest` que validan:
 
-| Test | Función evaluada | Qué verifica |
-|---|---|---|
-| `test_calcular_subtotal` | `calcular_subtotal` | Precisión aritmética en el cálculo de subtotales |
-| `test_ordenar_datos_burbuja` | `ordenar_datos_burbuja` | Correcto ordenamiento ascendente por sucursal |
-| `test_procesar_ventas_totales` | `procesar_ventas` | Consolidación de registros y totales generales |
-| `test_procesar_ventas_vacio` | `procesar_ventas` | Robustez ante una lista de datos vacía |
-| `test_procesar_ventas_max_min` | `procesar_ventas` | Identificación correcta del producto mayor y menor por sucursal |
+| Test                           | Función evaluada        | Qué verifica                                                    |
+| ------------------------------ | ----------------------- | --------------------------------------------------------------- |
+| `test_calcular_subtotal`       | `calcular_subtotal`     | Precisión aritmética en el cálculo de subtotales                |
+| `test_ordenar_datos_burbuja`   | `ordenar_datos_burbuja` | Correcto ordenamiento ascendente por sucursal                   |
+| `test_procesar_ventas_totales` | `procesar_ventas`       | Consolidación de registros y totales generales                  |
+| `test_procesar_ventas_vacio`   | `procesar_ventas`       | Robustez ante una lista de datos vacía                          |
+| `test_procesar_ventas_max_min` | `procesar_ventas`       | Identificación correcta del producto mayor y menor por sucursal |
 
 ---
 
